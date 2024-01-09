@@ -92,3 +92,14 @@ Combining the findings from above, some configurations for contrast and scale ad
 | Increase contrast (threshold=80), sharpen and rescale (1.3x) | 52% | 20.8% |
 | Increase contrast (threshold=80), sharpen and rescale (1.0x) | 56% | 18.4% |
 | Increase contrast (threshold=80), sharpen and rescale (1.5x) | 72% | 31.2% |
+
+## Further Work
+The above solution presented is a simple prototypical solution for an OCR-based captcha solver. For further improvements, the following methods can be employed.
+
+### Advanced OCR Techniques or Deep Learning Based OCR
+We can train an object detector such as [YOLOX](https://github.com/Megvii-BaseDetection/YOLOX) to perform character recognition.
+
+We can also test out other more advanced OCR software like [PaddlePaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) which may give better results
+
+### Grid Search to Find Most Optimal Combination of Preprocessing Steps
+To get the best configuration for preprocessing steps, we can use grid search to find the best parameters.
